@@ -10,22 +10,21 @@ using namespace std;
 int main()
 {
     Kamilia;
-    int t;
-    cin >> t;
-    string x = "hackerrank";
-    while (t--)
+    int n, k, q;
+    cin >> n >> k >> q;
+    ll arr[n];
+    for (int i = 0; i < n; ++i)
+        cin >> arr[i];
+    k = k % n;
+    int input;
+    for (int i = 0; i < q; i++)
     {
-        string input;
         cin >> input;
-        int p = 0;
-        for (int i = 0; i < input.length(); i++)
-        {
-            if (input[i] == x[p])
-                p++;
-        }
-        if (p >= 10)
-            YES;
+        if (n + (input - k) < n)
+            cout << arr[n + (input - k)] << endl;
         else
-            NO;
+        {
+            cout << arr[input - k] << endl;
+        }
     }
 }
