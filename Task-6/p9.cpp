@@ -19,6 +19,7 @@ public:
         int count = 0, x, y;
         for (auto itr : points)
         {
+
             if (itr[0] == point[0])
             {
                 // two points with the same x FOUND
