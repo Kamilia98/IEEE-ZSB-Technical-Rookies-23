@@ -19,7 +19,6 @@ public:
         int count = 0, x, y;
         for (auto itr : points)
         {
-
             if (itr[0] == point[0])
             {
                 // two points with the same x FOUND
@@ -38,16 +37,6 @@ public:
                 }
             }
         }
-        int countTemp = 0;
-        for (auto itr : points)
-        {
-            cout << itr[0] << " " << itr[1] << endl;
-            if ((itr.first[0] == point[0] || itr[0] == x) && (itr.first[1] == point[1] || itr.first[1] == y)){
-                countTemp++;
-            }
-        }
-        if (countTemp > 3)
-            count *= 2 ^ (countTemp - 3);
         return count;
     }
 };
