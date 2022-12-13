@@ -7,6 +7,7 @@ typedef long long int ll;
 using namespace std;
 int main()
 {
+
     Kamilia;
     ll w, h;
     cin >> w >> h;
