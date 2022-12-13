@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 typedef long long int ll;
-// #define endl '\n'
 #define NO cout << "NO" << endl
 #define YES cout << "YES" << endl
 #define Kamilia              \
@@ -15,7 +14,7 @@ void func(string input, string random)
         if (input[i] == random[i])
         {
             hits++;
-            // to solve the problem that the number considered as hit not to be 
+            // to solve the problem that the number considered as hit not to be
             // considered as miss if repeated
             random[i] = 'x';
         }
