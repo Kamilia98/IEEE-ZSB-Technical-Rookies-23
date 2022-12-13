@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 typedef long long int ll;
-// #define endl '\n'
+#define endl '\n'
 #define NO cout << "NO" << endl
 #define YES cout << "YES" << endl
 #define Kamilia              \
