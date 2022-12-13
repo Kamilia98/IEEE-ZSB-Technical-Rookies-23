@@ -9,6 +9,7 @@ typedef long long int ll;
 using namespace std;
 bool isValid(string s)
 {
+
     ll index = s.find("()");
     if (index != string::npos)
     {
