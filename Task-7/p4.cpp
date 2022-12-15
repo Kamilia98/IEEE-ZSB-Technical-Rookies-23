@@ -39,7 +39,5 @@ int main()
             break;
     }
     for (auto &str : st)
-    {
         cout << str << endl;
-    }
 }
