@@ -1,2 +1,0 @@
-ystem.out.println(i);
-               
