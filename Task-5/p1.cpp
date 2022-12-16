@@ -34,12 +34,8 @@ int main()
     ll arr[n];
     printf("Enter the array Elements: ");
     for (ll i = 0; i < n; i++)
-    {
         cin >> arr[i];
-    }
     Build_Max_Heap(arr, n);
     for (ll i = 0; i < n; i++)
-    {
         cout << arr[i] << endl;
-    }
 }

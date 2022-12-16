@@ -23,8 +23,6 @@ int main()
         if (n + (input - k) < n)
             cout << arr[n + (input - k)] << endl;
         else
-        {
             cout << arr[input - k] << endl;
-        }
     }
 }

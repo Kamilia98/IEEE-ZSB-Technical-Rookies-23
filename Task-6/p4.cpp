@@ -24,9 +24,7 @@ int main()
         {
             int temp = 0;
             for (int k = 0; k < m; k++)
-            {
                 temp += (arr[i][k] - '0' | arr[j][k] - '0');
-            }
             if (temp > y)
             {
                 z = 1;

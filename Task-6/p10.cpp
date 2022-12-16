@@ -7,15 +7,6 @@ typedef long long int ll;
     ios::sync_with_stdio(0); \
     cin.tie(0), cout.tie(0);
 using namespace std;
-template <typename S>
-ostream &operator<<(ostream &os, const vector<S> &vector)
-{
-    for (auto element : vector)
-    {
-        os << element << " ";
-    }
-    return os;
-}
 int main()
 {
     Kamilia;

@@ -22,7 +22,7 @@ public:
     {
         if (root == NULL)
             return;
-        std::cout << root->data << " ";
+        cout << root->data << " ";
         preOrder(root->left);
         preOrder(root->right);
     }
@@ -53,7 +53,7 @@ int main()
     std::cin >> t;
     while (t-- > 0)
     {
-        std::cin >> data;
+        cin >> data;
         root = myTree.insert(root, data);
     }
     myTree.preOrder(root);

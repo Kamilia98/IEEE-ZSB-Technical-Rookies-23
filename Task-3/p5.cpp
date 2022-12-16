@@ -17,8 +17,6 @@ int main()
         cin >> arr[i];
     sort(arr, arr + m);
     for (int i = 0; i < m - 1; i++)
-    {
         maxi = max(maxi, arr[i + 1] - arr[i]);
-    }
     cout << max(arr[0], max(n - arr[m - 1] - 1, maxi / 2));
 }
