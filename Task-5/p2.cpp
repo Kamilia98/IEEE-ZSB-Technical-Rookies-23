@@ -9,26 +9,26 @@ typedef long long int ll;
 using namespace std;
 bool isValid(string s)
 {
-
-    ll index = s.find("()");
-    if (index != string::npos)
+    int n = s.length();
+    stack<char> st;
+    for (char i : s)
     {
-        s.erase(index, 2);
-        return isValid(s);
+        if (i == '[' || i == '{' || i == '(')
+            st.push(i);
+        else if (i == ']' || i == '}' || i == ')')
+        {
+            if (st.empty())
+                return false;
+            else
+            {
+                if (st.top() == '{' && i == '}' || st.top() == '(' && i == ')' || st.top() == '[' && i == ']')
+                    st.pop();
+                else
+                    return false;
+            }
+        }
     }
-    index = s.find("[]");
-    if (index != string::npos)
-    {
-        s.erase(index, 2);
-        return isValid(s);
-    }
-    index = s.find("{}");
-    if (index != string::npos)
-    {
-        s.erase(index, 2);
-        return isValid(s);
-    }
-    return (s.empty());
+    return st.empty();
 }
 int main()
 {
